@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FAF7F3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-form{
+    width: 30rem;
+    border-radius: 15px;
+    background-color: #F0E4D3;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#title{
+    text-align: center;
+}
+
+.todo-form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.user-input{
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    padding: 10px;
+    box-shadow: 2px 2px 10px gray;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+}
+
+#nested-form-row{
+    width: 100%;
+}
+.error-field-input{
+    width: 100%;
+    padding: 10px;
+}
+
+#name-error, #date-error, #desc-error{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+input{
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+#operations{
+    padding: 30px;
+    padding-top: 0;
+    width: 100%;
+    background-color: #FAF7F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#operations button{
+    width: 8rem;
+    background: #DCC5B2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.op button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.op, .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.search {
+    display: none;
+}
+
+.search-inp {
+    height: 2.5rem;
+    width: 20rem;
+    padding-left: 1rem;
+}
+
+.search-icon {
+    border-radius: 50%;
+    background-color: #DCC5B2;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#totals {
+    display: flex;
+}
+
+.total, .marked, .unmarked {
+    display: flex;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #F0E4D3;
+    box-shadow: 2px 2px 10px gray;
+}
+
+#records {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.table-wrapper {
+    padding: 2rem;
+    background-color: #F0E4D3;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.task-table {
+    border-collapse: collapse;
+}
+
+.task-table th, td {
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+    word-wrap: break-word;
+    width: 8rem;
+    text-align: left;
+}
+
+.task-table td:nth-child(1) {
+    font-weight: bold;
+}
+
+.task-table td:nth-child(3){
+    max-width: 10rem;
+}
+
+.operations {
+    text-align: center;
+}
+
+.fa-solid {
+    margin: 0.3rem;
+    cursor: pointer;
+}
+
+.red {
+    background-color: rgb(232, 86, 86);
+}
+
+.highlight {
+    background-color: #DCC5B2;
+}
+
+#sort-down {
+    display: none;
+}
+ 
+#sort-up {
+    display: block;
+}
+
+.name {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
